@@ -4,7 +4,7 @@ export const Article = () => {
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3001/csblog')
+        fetch('https://backend-csblog.onrender.com/api/cschat')
             .then(response => response.json())
             .then(data => {
                 setArticles(data);
