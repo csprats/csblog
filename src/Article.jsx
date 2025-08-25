@@ -7,6 +7,7 @@ export const Article = () => {
         fetch('https://backend-csblog.onrender.com/api/cschat')
             .then(response => response.json())
             .then(data => {
+                console.log(data)
                 setArticles(data);
             });
     }, []); // Agrega un array de dependencias vacío para que se ejecute solo una vez.
@@ -16,8 +17,8 @@ export const Article = () => {
         {articles.length > 0 ? (
             articles.map((item) => (
                 <div key={item.id}>
-                    <b>{item.user}:</b>
-                    <div  dangerouslySetInnerHTML={{ __html: item.content }} className="articles" ></div>
+                    <b>{item.user_name}:</b>
+                    <div  dangerouslySetInnerHTML={{ __html: item.message }} className="articles" ></div>
                 </div>
             ))
         ) : (
