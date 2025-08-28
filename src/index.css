@@ -5,7 +5,7 @@ html {
 }
 
 header {
-  background-color: #eee;
+  background-color: #74A4BC;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -23,5 +23,5 @@ body {
   border: solid black 1px;
   margin-bottom: 50px;
   border-radius: 8px;
-  background-color: #eee;
+  background-color: #74a4bc54;
 }
